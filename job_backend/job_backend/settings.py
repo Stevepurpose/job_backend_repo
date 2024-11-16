@@ -154,3 +154,13 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOWS_CREDENTIALS = True
+
+CORS_ALLOW_HEADERS = [
+    'authorization',
+    'content-type',
+]
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'OPTIONS',
+]
