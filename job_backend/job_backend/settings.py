@@ -60,6 +60,23 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = ['https://myjobtracker.onrender.com']
+
+CORS_ALLOWS_CREDENTIALS = True
+
+CORS_ALLOW_HEADERS = (
+    'accept',
+    'accept-encoding'
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+)
+
+
+
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES' : (
@@ -149,13 +166,3 @@ if not DEBUG:
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOWED_ORIGINS = ['https://myjobtracker.onrender.com']
-
-CORS_ALLOWS_CREDENTIALS = True
-
-CORS_ALLOW_HEADERS = (
-    'accept',
-    'authorization',
-    'content-type',
-    'user-agent'
-)
