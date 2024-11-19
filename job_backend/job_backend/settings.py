@@ -76,7 +76,15 @@ CORS_ALLOW_HEADERS = (
     'x-requested-with'
 )
 
-
+CORS_ALLOW_METHODS = [
+   'GET',
+   'POST',
+   'PATCH',
+   'DELETE',
+   'PUT',
+   'OPTIONS',
+   'HEAD'
+]
 
 
 
