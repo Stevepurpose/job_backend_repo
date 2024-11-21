@@ -121,7 +121,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'backend.wsgi.application'
+WSGI_APPLICATION = 'job_backend.wsgi.application'
 
 
 # Database
