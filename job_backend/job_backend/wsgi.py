@@ -14,7 +14,7 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'job_backend.settings')
 
 if os.environ.get('DJANGO_ENV')=='production':
-    app = get_wsgi_application()
+    application = get_wsgi_application()
 else:
     application = get_wsgi_application()
 
