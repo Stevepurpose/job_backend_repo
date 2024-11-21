@@ -29,7 +29,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://myjobtracker.onrender.com', '127.0.0.1', 'localhost']
 
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ['https://myjobtracker.onrender.com']
+CORS_ALLOWED_ORIGINS = ['https://myjobtracker.onrender.com', 'http://localhost:3000']
 
 CORS_ALLOWS_CREDENTIALS = True
 
